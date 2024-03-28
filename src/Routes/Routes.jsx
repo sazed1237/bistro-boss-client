@@ -21,6 +21,7 @@ import Payment from "../Pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
 import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
+import ManageBookings from "../Pages/Dashboard/ManageBookings/ManageBookings";
 
 export const router = createBrowserRouter([
   {
@@ -104,6 +105,10 @@ export const router = createBrowserRouter([
         path: 'updateItems/:id',
         element: <AdminRoute><UpdateItems></UpdateItems></AdminRoute>,
         loader: ({ params }) => fetch(`https://bistro-boss-server-iota-nine.vercel.app/menus/${params.id}`)
+      },
+      {
+        path: 'bookings',
+        element: <AdminRoute><ManageBookings></ManageBookings></AdminRoute>
       }
 
     ]
