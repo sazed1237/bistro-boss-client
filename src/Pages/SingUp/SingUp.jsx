@@ -46,8 +46,8 @@ const SingUp = () => {
                                     console.log('user added in data base')
 
                                     Swal.fire({
-                                        title: "Good job!",
-                                        text: "You clicked the button!",
+                                        title: "Successful",
+                                        text: "Your Account is Created ",
                                         icon: "success"
                                     });
 
@@ -157,7 +157,7 @@ const SingUp = () => {
 
 
                                 <div className="form-control mt-6">
-                                    <input className='btn bg-[#D1A054] bg-opacity-60 hover:bg-[#D1A054] text-white' type="submit" value="Sing In" />
+                                    <input className='btn bg-[#D1A054] bg-opacity-60 hover:bg-[#D1A054] text-white' type="submit" value="Sing Up" />
                                     <span className='text-center my-2 text-[#D1A054]'>Already Have an Account? <Link to={'/login'}>Login</Link></span>
                                 </div>
                                 <div>

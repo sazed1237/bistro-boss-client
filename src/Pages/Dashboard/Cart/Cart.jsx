@@ -11,7 +11,7 @@ const Cart = () => {
     const [cart, refetch] = useCart();
     const axiosSecure = useAxiosSecure()
 
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0)
+    const totalPrice = cart.reduce((total, item) => total + item.price, 0).toFixed(2)
 
     const handleDelete = id => {
         console.log(id)
