@@ -26,16 +26,17 @@ const CheckoutForm = () => {
     const totalPrice = cart.reduce((total, item) => total + item.price, 0)
 
     useEffect(() => {
-        if (totalPrice > 0) {
+        if (totalPrice > 0) { 
+            
             axiosSecure.post('/create-payment-intent', { price: totalPrice })
                 .then(res => {
-                    console.log(res.data.clientSecret)
+                    console.log(res.data.clientSecret) 
                     setClientSecret(res.data.clientSecret)
                 })
         }
     }, [axiosSecure, totalPrice])
 
-
+console.log(clientSecret)
 
     const handleSubmit = async (event) => {
         event.preventDefault()
@@ -142,7 +143,7 @@ const CheckoutForm = () => {
                     },
                 }}
             />
-            <button
+            <button 
                 className='mt-5 bg-green-600 px-4 rounded text-white' type="submit"
                 disabled={!stripe || !clientSecret}>
                 Pay

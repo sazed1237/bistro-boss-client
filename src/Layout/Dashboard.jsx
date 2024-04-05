@@ -21,7 +21,7 @@ const Dashboard = () => {
                     <h1>Bistro Boss <br /> <span className='font-light '>Restaurant</span></h1>
                 </div>
                 <ul className='menu uppercase'>
-                    {
+                    { 
                         isAdmin ? <>
                             <li><NavLink to={'/dashboard/adminHome'}>
                                 <FaHome></FaHome>
