@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <div className="footer flex justify-center gap-32 items-center p-10 bg-neutral text-neutral-content">
-                <div className='text-center lg:mr-40'>
+            <div className="footer flex md:justify-center md:gap-32 md:items-center md:p-10 p-3 bg-neutral text-neutral-content">
+                <div className='md:text-center lg:mr-40'>
                     <div>
                         <h1 className='text-2xl pb-5'>Contact Us</h1>
                         <p>123 ABS Street, Uni 21, Bangladesh</p>
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="footer footer-center p-4 bg-black text-white">
                 <aside>
-                    <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+                    <p>Copyright © 2024 - All right reserved by <a className='hover:text-blue-500' href="https://sazedulislam.netlify.app/">Sazed Creeation's</a></p>
                 </aside>
             </div>
         </footer>

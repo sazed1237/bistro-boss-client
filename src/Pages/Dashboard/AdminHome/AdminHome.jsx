@@ -116,48 +116,47 @@ const AdminHome = () => {
 
             <div className='md:flex'>
                 {/* for barChart */}
-                <div >
-                    <BarChart
-                        width={500}
-                        height={300}
-                        data={chartData}
-                        margin={{
-                            top: 20,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
-                        }}
-                        className='mt-14'
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="category" />
-                        <YAxis />
-                        <Bar dataKey="quantity" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
-                            {chartData.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={colors[index % 6]} />
-                            ))}
-                        </Bar>
-                    </BarChart>
+                <div className='w-full h-[300px]'>
+                    <ResponsiveContainer>
+                        <BarChart
+                            width={500}
+                            height={300}
+                            data={chartData}
+
+                            className='mt-14'
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="category" />
+                            <YAxis />
+                            <Bar dataKey="quantity" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                                {chartData.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={colors[index % 6]} />
+                                ))}
+                            </Bar>
+                        </BarChart>
+                    </ResponsiveContainer>
                 </div>
                 {/* for PieChart */}
-                <div >
-                    <PieChart width={400} height={400}>
-                        <Pie
-                            data={pieChartData}
-                            cx="50%"
-                            cy="50%"
-                            labelLine={false}
-                            label={renderCustomizedLabel}
-                            outerRadius={80}
-                            fill="#8884d8"
-                            dataKey="value"
-                        >
-                            {pieChartData.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                            ))}
-                        </Pie>
-                        <Legend></Legend>
-                    </PieChart>
+                <div className='w-full h-[400px]' >
+                    <ResponsiveContainer>
+                        <PieChart width={400} height={400}>
+                            <Pie
+                                data={pieChartData}
+                                cx="50%"
+                                cy="50%"
+                                labelLine={false}
+                                label={renderCustomizedLabel}
+                                outerRadius={80}
+                                fill="#8884d8"
+                                dataKey="value"
+                            >
+                                {pieChartData.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Legend></Legend>
+                        </PieChart>
+                    </ResponsiveContainer>
                 </div>
 
             </div>

@@ -14,7 +14,7 @@ import SectionsTitle from '../../../components/SectionsTitle/SectionsTitle';
 
 const Category = () => {
     return (
-        <section className='w-10/12 mx-auto'>
+        <section className='md:w-10/12 mx-auto'>
 
             <SectionsTitle
                 subHeading={'From 11:00am to 10:00pm'}
@@ -22,11 +22,21 @@ const Category = () => {
             ></SectionsTitle>
 
             <Swiper
-                slidesPerView={4}
-                spaceBetween={30}
-                // centeredSlides={true}
+                slidesPerView={2}
+                spaceBetween={10}
+                centeredSlides={true}
                 pagination={{
                     clickable: true,
+                }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
                 }}
                 modules={[Pagination]}
                 className="mySwiper mb-10"

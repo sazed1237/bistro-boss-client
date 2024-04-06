@@ -55,8 +55,8 @@ const Cart = () => {
             <DashboardTitle heading={"Wanna add more?"} subHeading={'My Cart'}></DashboardTitle>
 
             <div className='flex justify-evenly'>
-                <h2 className='text-2xl font-semibold'>Total Order: {cart.length}</h2>
-                <h2 className='text-2xl font-semibold' >Total Price: ${totalPrice}</h2>
+                <h2 className='md:text-2xl font-semibold'>Total Order: {cart.length}</h2>
+                <h2 className='md:text-2xl font-semibold' >Total Price: ${totalPrice}</h2>
                 {cart.length ? <Link to='/dashboard/payment'><button className='btn btn-sm hover:text-black bg-[#D1A054] text-white'>Pay</button></Link>
                     : <button disabled className='btn btn-sm hover:text-black bg-[#D1A054] text-white'>Pay</button>
                 }

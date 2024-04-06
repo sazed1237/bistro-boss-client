@@ -4,14 +4,14 @@ import { FaSuperscript } from 'react-icons/fa';
 
 const ContactForm = () => {
     return (
-        <section className='w-10/12 mx-auto'>
+        <section className='md:w-10/12 mx-auto'>
             <SectionsTitle heading={'contact form'} subHeading={'Send Us a Message'} ></SectionsTitle>
 
 
             <div className="hero min-h-screen">
                 <div className="card w-full shadow-2xl bg-base-200 rounded-none">
                     <form className="card-body">
-                        <div className='grid md:grid-cols-2 gap-7'>
+                        <div className='grid md:grid-cols-2 md:gap-7'>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name*</span>

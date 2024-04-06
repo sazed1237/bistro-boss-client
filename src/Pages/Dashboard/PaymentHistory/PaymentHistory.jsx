@@ -25,7 +25,7 @@ const PaymentHistory = () => {
             <DashboardTitle heading={'Payment History'} subHeading={'All Payments'} ></DashboardTitle>
 
             <div className='bg-base-100 px-3 py-5'>
-                <h2 className='text-2xl py-2 font-semibold'>Total Payment: {payments.length} </h2>
+                <h2 className='md:text-2xl py-2 font-semibold'>Total Payment: {payments.length} </h2>
 
                 {/* cart table  */}
                 <div className="overflow-x-auto mb-7">

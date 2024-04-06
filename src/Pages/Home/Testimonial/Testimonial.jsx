@@ -20,7 +20,7 @@ const Testimonial = () => {
     }, [])
 
     return (
-        <div className='w-10/12 mx-auto my-14'>
+        <div className='md:w-10/12 mx-auto my-14'>
             <SectionsTitle
                 heading={"Testimonial"}
                 subHeading={"What Our Client Say"}
@@ -33,17 +33,17 @@ const Testimonial = () => {
                     reviews.map(review => <SwiperSlide
                         key={review._id}
                     >
-                        <div className='mx-20 flex flex-col items-center text-center'>
+                        <div className='md:mx-20 mx-10 flex flex-col items-center text-center'>
                             <div >
                                 <Rating
-                                    style={{ maxWidth: 180 }}
+                                    style={{ maxWidth: 150 }}
                                     value={review.rating}
                                     readOnly
                                 />
                             </div>
-                            <img className='w-[80px] my-5 ' src={leftQuote} alt="" />
-                            <p>{review.details}</p>
-                            <h3 className='text-2xl text-orange-400  mt-2'>{review.name}</h3>
+                            <img className='md:w-[80px] w-14 my-5 ' src={leftQuote} alt="" />
+                            <p className='text-sm md:text-md'>{review.details}</p>
+                            <h3 className='md:text-2xl text-xl text-orange-400  mt-2'>{review.name}</h3>
                         </div>
                     </SwiperSlide>)
                 }

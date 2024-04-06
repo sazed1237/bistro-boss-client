@@ -69,9 +69,9 @@ const SingUp = () => {
             </Helmet>
 
             <section style={{ backgroundImage: `url(${loginBG})` }} className='w-full   flex items-center'>
-                <div className="w-10/12 mx-auto hero my-24 bg-base-200">
+                <div className="md:w-10/12 mx-auto hero my-24 bg-base-200">
 
-                    <div style={{ backgroundImage: `url(${loginBG})` }} className="hero-content flex-col lg:flex-row-reverse gap-10 m-5 shadow-xl shadow-gray-500">
+                    <div style={{ backgroundImage: `url(${loginBG})` }} className="hero-content flex-col lg:flex-row-reverse gap-10 md:m-5 md:shadow-xl shadow-gray-500">
                         <div className="flex items-center">
                             <img src={loginImg} alt="" />
                         </div>

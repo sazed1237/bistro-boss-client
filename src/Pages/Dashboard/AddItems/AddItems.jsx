@@ -60,7 +60,7 @@ const AddItems = () => {
             <DashboardTitle heading={'Add An Item'} subHeading={`What's new`}></DashboardTitle>
 
 
-            <div className="card w-5/6 mx-auto shadow-2xl bg-base-200 rounded-none mb-20">
+            <div className="card md:w-5/6 mx-auto shadow-2xl bg-base-200 rounded-none mb-20">
                 <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                     <div className="form-control">
                         <label className="label">
@@ -70,7 +70,7 @@ const AddItems = () => {
                             {...register("name", { required: true })}
                             type="text"
                             placeholder="Recipe Name"
-                            className="input input-bordered"
+                            className="input input-bordered w-full max-w-xs md:max-w-full"
                         />
                     </div>
 
@@ -101,7 +101,7 @@ const AddItems = () => {
                                 {...register("price", { required: true })}
                                 type="number"
                                 placeholder="Price"
-                                className="input input-bordered"
+                                className="input input-bordered w-full max-w-xs"
                             />
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const AddItems = () => {
                         <input
                             {...register("image", { required: true })}
                             type="file"
-                            className="file-input w-full file-input-md"
+                            className="file-input md:file-input-md file-input-sm w-full max-w-xs md:max-w-full"
                         />
                     </div>
 

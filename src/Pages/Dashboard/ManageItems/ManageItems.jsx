@@ -56,7 +56,7 @@ const ManageItems = () => {
 
             <DashboardTitle heading={"Manage All Items"} subHeading={'Hurry Up!'}></DashboardTitle>
 
-            <h2 className='text-2xl font-semibold'>Total Order: {menuItems.length}</h2>
+            <h2 className='md:text-2xl font-semibold'>Total Order: {menuItems.length}</h2>
 
             {/* menuItems table  */}
             <div className="overflow-x-auto my-7">
@@ -79,7 +79,7 @@ const ManageItems = () => {
                                 <td className='font-bold'>{index + 1}</td>
                                 <td>
                                     <div className="avatar">
-                                        <div className="w-16 rounded">
+                                        <div className=" w-10 md:w-16 rounded">
                                             <img src={item.image} alt={item.name} />
                                         </div>
                                     </div>

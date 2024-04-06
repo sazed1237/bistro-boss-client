@@ -19,7 +19,7 @@ const Featured = () => {
                     </div>
 
                     <div className='md:ml-14'>
-                        <h1>March 20, 2023 <br /> WHERE CAN I GET SOME?</h1>
+                        <h1>March 20, 2023 <br /> <span className='text-xl'>WHERE CAN I GET SOME?</span></h1>
                         <p> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam minima velit deserunt iusto ducimus architecto voluptas, adipisci magni nisi placeat vel ullam id totam ea maxime dolorem saepe quod in qui tempora ad reprehenderit cumque nemo similique. Optio ducimus aperiam tenetur sapiente laudantium voluptatem, eveniet culpa commodi, saepe hic illum.</small></p>
                         <Link to={'/order/salads'}>
                             <button className="btn text-white btn-outline border-0 border-b-4 btn-sm mt-4 ">Order Now</button>

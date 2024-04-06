@@ -75,10 +75,10 @@ const Login = () => {
                 <title>Bistro Boss | Sing up</title>
             </Helmet>
 
-            <section style={{ backgroundImage: `url(${loginBG})` }} className='w-full   flex items-center'>
-                <div className="w-10/12 mx-auto hero my-24 bg-base-200">
+            <section style={{ backgroundImage: `url(${loginBG})` }} className='w-full flex items-center'>
+                <div className="md:w-10/12 mx-auto hero my-24 bg-base-200">
 
-                    <div style={{ backgroundImage: `url(${loginBG})` }} className="grid md:grid-cols-2 gap-10 m-5 shadow-xl shadow-gray-500">
+                    <div style={{ backgroundImage: `url(${loginBG})` }} className="grid md:grid-cols-2 gap-10 md:m-5 md:shadow-xl shadow-gray-500">
                         <div className="flex items-center">
                             <img src={loginImg} alt="" />
                         </div>
